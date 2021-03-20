@@ -2,138 +2,192 @@
 <html>
 	<head>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			body {
-				font-family: 'Noto Sans JP', sans-serif;
-				color : #58595a;
-			}
-			.container {
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-			}
-			@media only screen and (min-width: 768px) {
-				.col-1 {width: 8.33%;}
-				.col-2 {width: 16.66%;}
-				.col-3 {width: 25%;}
-				.col-4 {width: 33.33%;}
-				.col-5 {width: 41.66%;}
-				.col-6 {width: 50%;}
-				.col-7 {width: 58.33%;}
-				.col-8 {width: 66.66%;}
-				.col-9 {width: 75%;}
-				.col-10 {width: 83.33%;}
-				.col-11 {width: 91.66%;}
-				.col-12 {width: 100%;}
-			}
-			@keyframes introAnimation {
-				0% {
-					background-position: 0 50%; }
-				50% {
-					background-position: 100% 50%; }
-				100% {
-					background-position: 0 50%;
-				}
-			}
-			
-			.change-colors {
-				background-image: linear-gradient(108deg,#ff73bb,#b85fda,#40abe3,#ff73bb);
-				background-repeat: no-repeat;
-				background-size: 800% 400%;
-				animation-delay : 0s;
-				animation-duration : 35s;
-				animation-iteration-count : infinite;
-				animation-name : introAnimation;
-				animation-timing-function : linear;
-			}
-
-			.forma01 {
-				width         : 20vh;
-				height        : 5rem;
-				border-right  : 1px solid black;
-				border-bottom : 1px solid black;
-			}
-			.forma02 {
-				width: 5vh;
-				height: calc(84vh - 27vw);
-				position: absolute;
-				top: 2rem;
-			}
-			.header {
-				position: relative;
-    			top: -65px;
-				left: 6vh;
-				padding: 1rem;
-				width: 85vw;
-			}
-			.name{
-				font-weight : 400;
-				font-size: calc(.4vw + 3.5vh);
-				margin: 0;
-			}
-
-			.card-content {
-				padding       : 40px;
-				border-radius : 0 0 2px 2px;
-			}
-			.img {
-				border: 1px solid black;
-				border-radius: 50%;
-				height: 150px;
-				width: auto;
-				margin: 0rem 1rem 1rem 0;
-			}
-			.card {
-				box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-				padding: 1rem;
-				margin : 1rem;
-			}
-			.info {
-				top: -60px;
-				position: relative;
-				padding: 0 3rem;
-			}
-			
-		</style>
 	</head>
-	<div class="container">
-		<div class="col-12">
-			<div class="forma01"></div>
-			<div class="forma02 change-colors"></div>
-			<div class="container header">
-				<img alt="profile-image" class="img" src="https://scontent.fgdl9-1.fna.fbcdn.net/v/t1.0-9/154856259_3971353019584061_6067749713109992200_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeEL5nsQTcRK9yvvehANMyhVNxM6aJMGu1M3Ezpokwa7U7qnS2KRNTjnSPg0-sX2j3Gn5PK8Mewe6a0K6bi064Aj&_nc_ohc=raLwW5dxVJQAX_b3j3p&_nc_ht=scontent.fgdl9-1.fna&oh=acf464a5855a03d972d490c20b864d84&oe=606A9F78">
-			
-				<div class="">
-					<h2 class="name">Montserrat <b>Delgado Alvarez</b></h4>
-					<h4 class="">Software Engineer &amp; UI/UX Expert</h6>
+	<body>
+		<div class="container">
+			<div class="col-12">
+				<div class="forma01"></div>
+				<div class="forma02 change-colors"></div>
+				<div class="container header">
+					<img alt="profile-image" class="img" src="https://scontent.fgdl9-1.fna.fbcdn.net/v/t1.0-9/154856259_3971353019584061_6067749713109992200_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeEL5nsQTcRK9yvvehANMyhVNxM6aJMGu1M3Ezpokwa7U7qnS2KRNTjnSPg0-sX2j3Gn5PK8Mewe6a0K6bi064Aj&_nc_ohc=raLwW5dxVJQAX_b3j3p&_nc_ht=scontent.fgdl9-1.fna&oh=acf464a5855a03d972d490c20b864d84&oe=606A9F78">
+				
+					<div class="">
+						<h2 class="name">Montserrat <b>Delgado Alvarez</b></h4>
+						<h4>Software Engineer &amp; UI/UX Expert</h6>
+					</div>
+				</div>
+			</div>
+			<div class="container info">
+				<div class="col-4">
+					<div class="p-1">
+						<div class="social">
+							<a href="https://www.facebook.com/worrington">
+								<img src="img/F.png" class="social-icon">
+								<span>Facebook</span>
+							</a>
+							<a href="https://api.whatsapp.com/send?phone=523312956489">
+								<img src="img/W.png" class="social-icon">
+								<span>WhatsApp</span>
+							</a>
+							<a href="https://t.me/worrigton">
+								<img src="img/T.png" class="social-icon">
+								<span>Telegram</span>
+							</a>
+							<a href="https://www.linkedin.com/in/montserrat-delgado-alvarez-b2398916a/">
+								<img src="img/L.png" class="social-icon">
+								<span>Linkedin</span>
+							</a>
+						</div>
+					</div>
+					<div class="card p-1 seccion-about">
+						<h5>About Me</h5>
+						<p>Hi I'm 24 years old, I am an outgoing person, I like to play video games.
+						I am part of a global community, which invites girls to solve real world problems through technology.</p>
+					</div>
+					<div class="card p-1 secction-contac">
+						<h5>Contact</h5>
+						<ul>
+							<li>
+								<img src="img/mail.png" class="contact-icon">
+								<span>&nbsp; montserrat.delgado @alumnos.udg.mx</span>
+							</li>
+							<li>
+								<img src="img/tel.png" class="contact-icon">
+								<span>&nbsp; 36902094</span>
+							</li>
+							<li>
+								<img src="img/cel.png" class="contact-icon">
+								<span>&nbsp; 3312956489</span>
+							</li>
+							<li>
+								<img src="img/gps.png" class="contact-icon">
+								<span>&nbsp; Guadalajara Jal.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="card">
+						<div class="p-1 seccion-education">
+							<h5>Work portafolio</h5>
+						</div>
+						<ul class="slider">
+							<li id="zoko">
+								<img src="./img/zoko.png"/>
+							</li>
+							<li id="fondimex">
+								<img src="./img/fondimex.png"/>
+							</li>
+							<li id="culturaInmobilidaira">
+								<img src="./img/culturaInmobilidaira.png"/>
+							</li>
+							<li id="eleperfumes">
+								<img src="./img/eleperfumes.png"/>
+							</li>
+						</ul>
+						
+						<ul class="menu">
+							<li>
+							<a href="#zoko">1</a>
+							</li>
+							<li>
+							<a href="#fondimex">2</a>
+							</li>
+							<li>
+							<a href="#culturaInmobilidaira">3</a>
+							</li>
+							<li>
+								<a href="#eleperfumes">4</a>
+							</li>
+						</ul>
+					</div>
+					<div class="p-1">
+						<ul class="feacture-list">
+							<li>
+								<span>Teamwork</span>
+							</li>
+							<li>
+								<span>Analysis and design of user experience</span>
+							</li>
+							<li>
+								<span>Leadership</span>
+							</li>
+							<li>
+								<span>Proactive</span>
+							</li>
+							<li>
+								<span>Responsible</span>
+							</li>
+							<li>
+								<span>Communicative</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-8 container">
+					<div class="col-6">
+						<div class="card">
+							<div class="p-1 seccion-education">
+								<h5>Education</h5>
+							</div>
+							<div class="p-1 timeline">
+								<div class="timeline-item" date-is='2011-2015'>
+									<p>
+										Escuela Politécnica de Guadalajara (UDG) <br/>
+										<span class="description">
+											Professional Informatics Technician (Técnico Profesional en Informática)
+										</span>
+									</p>
+								</div>
+								<div class="timeline-item" date-is='2015-actually'>
+									<p>
+										Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI) <br/>
+										<span class="description">
+											Computer Engineer (Licenciatura en Ingeniería en Computación)
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="p-1 seccion-experience">
+								<h5>Experience & volunter work</h5>
+							</div>
+							<div class="p-1 timeline">
+								<div class="timeline-item" date-is='2016-2020'>
+									<p>
+										GrupoTB <br/>
+										<span class="description">
+											Full-stack developer
+										</span>
+									</p>
+								</div>
+								<div class="timeline-item" date-is='2017-actually'>
+									<p>
+										Technovation Girls <br/>
+										<span class="description">
+											Volunteer in the program, mentor and speaker
+										</span>
+									</p>
+								</div>
+								<div class="timeline-item" date-is='2020-actually'>
+									<p>
+										Agave Lab <br/>
+										<span class="description">
+											Front End developer
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 container">
+
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-12 container info">
-			<div class="card">
-				<h5>About Me</h5>
-				<p>Hi I'm 24 years old, I am an outgoing person, I like to play video games.
-				I am part of a global community, which invites girls to solve real world problems through technology.</p>
-			</div>
-			<div class="col-4 card">
-				<h5>Contact</h5>
-				<ul class="profile-list">
-					<li class="clearfix">
-						<span class="title">email: </span>
-						<span class="content">montserrat.delgado@alumnos.udg.mx</span>
-					</li>
-					<li class="clearfix">
-						<span class="title">Teléfono</span>
-						<span class="content">36902094</span>
-					</li>
-					<li class="clearfix">
-						<span class="title">Dirección</span>
-						<span class="content">Eugenio Lara 72</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	</body>
 </html>
